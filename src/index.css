@@ -1,10 +1,20 @@
-body {
+:root, body {
   margin: 0;
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  padding: 0;
+  font-family: 'Fira Code', source-code-pro, monospace;
+  font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --background-color: #fbf1c7;
+  --foreground--color: #3c3836;
+  color: var(--foreground--color, #3c3836);
+  background-color: var(--background-color, #fbf1c7);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+.TypingField {
+  padding-top: 10%;
+  margin: auto;
+  width: 60%;
+  text-align: justify;
 }

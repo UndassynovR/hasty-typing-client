@@ -8,13 +8,36 @@
 
   --background-color: #fbf1c7;
   --foreground--color: #3c3836;
-  color: var(--foreground--color, #3c3836);
   background-color: var(--background-color, #fbf1c7);
 }
-
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.settings {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 .TypingField {
-  padding-top: 10%;
   margin: auto;
+  margin-top: 10%;
   width: 60%;
-  text-align: justify;
+  text-align: left;
+}
+.normal {
+  color: var(--foreground--color, #3c3836);
+}
+.typed {
+  color: var(--background-color, #fbf1c7);
+}
+.error {
+  color: red;
+}
+button{
+  vertical-align: middle;
 }

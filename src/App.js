@@ -1,5 +1,5 @@
 import MainPage from './pages'
-import NotFoundPage from './pages/notfound'
+import PageNotFound from './pages/PageNotFound'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
       <Routes>
         <Route path='/'>
           <Route index element={<MainPage />} />
-          <Route path='*' element={<NotFoundPage />} />
+          <Route path='*' element={<PageNotFound />} />
         </Route>
       </Routes>
     </Router>
